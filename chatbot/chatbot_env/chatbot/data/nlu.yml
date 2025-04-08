@@ -1,0 +1,228 @@
+version: "3.1"
+nlu:
+- intent: xin_chao
+  examples: |
+    - xin chào
+    - chào bạn
+    - hello
+    - hi
+    - hey
+    - mình có vài câu hỏi
+    - có ai giúp mình không
+    - bạn giúp được tôi không
+    - bạn có tư vấn giúp mình được không
+    - bạn ơi
+    - anh ơi
+    - chị ơi
+    - cháu ơi
+    - shop ơi
+    - cho em hỏi ạ
+    - alo
+    - có ai ở đây không?
+    - chào shop
+    - chào
+- intent: tam_biet
+  examples: |
+    - tạm biệt
+    - chào tạm biệt
+    - chào tạm biệt em
+    - tạm biệt em
+    - tạm biệt em nhé
+    - bye
+    - bai bai
+    - bái bai
+    - bye bye
+    - tam biet
+- intent: cam_on
+  examples: |
+    - chuẩn
+    - hay
+    - siêu
+    - tuyệt
+    - được rồi
+    - ổn rồi
+    - vâng
+    - thanks
+    - thank you
+    - many thanks
+    - thanks alot
+    - thanks very much
+    - thank you very much
+    - thank you so much
+    - ok
+    - cám ơn
+    - cám ơn nhé
+    - cảm ơn em
+    - cảm ơn em nhiều nhé
+    - cảm ơn
+- intent: giao_hang
+  examples: |
+    - bạn có thể giao hàng cho tôi không
+    - bạn giao hàng được tới đâu
+    - bạn giao hàng được đến đâu
+    - bạn hỗ trợ giao hàng như thế nào
+    - bạn hỗ trợ hoàn trả hàng như thế nào
+    - chính sách giao hàng của bạn là gì
+    - giao hàng như thế nào
+    - trong 3km thì có giao được không
+    - ở ngoại ô thì có tính phí giao hàng không
+    - tiền giao hàng tính ra sao
+    - nếu bị đổ bể có đền không
+    - nếu giao thiếu thì sao
+    - không ship mà qua tận nơi lấy có giảm giá không
+    - giao hàng trong bao lâu
+    - bao lâu thì giao hàng đến
+    - có thể giao hàng tận nơi được không
+    - có thể giao hàng nhanh nhất có thể được không
+- intent: gio_hoat_dong
+  examples: |
+    - khi nào đóng cửa
+    - khi nào bạn đóng cửa
+    - khi nào shop đóng cửa
+    - khi nào em đóng cửa
+    - khi nào mở cửa
+    - khi nào bạn mở cửa
+    - khi nào shop mở cửa
+    - khi nào em mở cửa
+    - Còn mở cửa không ạ
+    - Đóng cửa lúc nào
+    - Giờ đóng mở cửa
+    - Giờ hoạt động như thế nào
+    - Phục vụ vào thời gian nào
+    - Thời gian nào mở cửa
+    - Thời gian nào đóng cửa
+    - Khuya có mở cửa không
+    - đóng cửa
+    - khuya có mở cửa không
+- intent: benh_dai
+  examples: |
+    - Mèo bị [dại](b_dai)
+    - Chó bị [dại](b_dai)
+    - [Dại](b_dai) là gì
+    - Tại sao lại bị [dại](b_dai)
+    - [Dại](b_dai) có nguy hiểm không
+    - Mình muốn hỏi bệnh [dại](b_dai)
+    - Động vật nào bị [dại](b_dai)
+    - [Dại](b_dai) có thể chữa khỏi được không
+    - Làm sao để tránh [dại](b_dai)
+    - Những dấu hiệu có bệnh [dại](b_dai)
+    - Virus [dại](b_dai)
+    - [dại](b_dai) là gì
+    - Virus [dại](b_dai) có nguy hiểm không
+    - Mình muốn hỏi về virus [dại](b_dai)
+    - Động vật nào bị virus [dại](b_dai)
+    - [dại](b_dai) có thể chữa khỏi được không
+    - Bệnh [dại](b_dai) ở mèo
+    - Cách chữa bệnh [dại](b_dai)
+    - Thông tin về bệnh [dại](b_dai)
+    - virus [dại](b_dai)
+- intent: virus_FIV
+  examples: |
+    - Mèo bị [sida](vi_fiv)
+    - [sida](vi_fiv) ở mèo là gì
+    - Tại sao mèo lại bị [sida](vi_fiv)
+    - [Sida](vi_fiv) ở mèo có nguy hiểm không
+    - Mình muốn hỏi bệnh [sida](vi_fiv) ở mèo
+    - Động vật nào bị [sida](vi_fiv)
+    - [Sida](vi_fiv) ở mèo có thể chữa khỏi được không
+    - Làm sao để tránh bệnh [sida](vi_fiv)
+    - Mèo tiêm vắc xin [FIV](vi_fiv)
+    - Virus [FIV](vi_fiv)
+    - [FIV](vi_fiv) là gì
+    - Tại sao lại bị [FIV](vi_fiv)
+    - Virus [FIV](vi_fiv) có nguy hiểm không
+    - Mình muốn hỏi về virus [FIV](vi_fiv)
+    - Động vật nào bị virus [FIV](vi_fiv)
+    - [FIV](vi_fiv) có thể chữa khỏi được không
+    - Làm sao để tránh [FIV](vi_fiv)
+    - Bệnh [Dại](vi_fiv) có nguy hiểm ko
+    - Cách chữa bệnh [dại](vi_fiv)
+    - Thông tin về bệnh [dại](vi_fiv)
+    - mèo bị [sida](vi_fiv)
+    - [fiv]{"entity": "vi_fiv", "value": "FIV"} là gì
+    - virus [FIV](vi_fiv) có nguy hiểm không
+    - động vật nào bị [sida](vi_fiv)
+- intent: benh_giam_bach_cau
+  examples: |
+    - Mèo bị [giảm bạch cầu](giam_bach_cau)
+    - [giảm bạch cầu](giam_bach_cau) là gì
+    - Tại sao lại bị [giảm bạch cầu](giam_bach_cau)
+    - [giảm bạch cầu](giam_bach_cau) có nguy hiểm không
+    - Mình muốn hỏi bệnh [giảm bạch cầu](giam_bach_cau)
+    - Động vật nào bị [giảm bạch cầu](giam_bach_cau)
+    - [giảm bạch cầu](giam_bach_cau) có thể chữa khỏi được không
+    - Làm sao để tránh [giảm bạch cầu](giam_bach_cau)
+    - Mèo bị [FPV](giam_bach_cau)
+    - [FPV](giam_bach_cau) là gì
+    - Tại sao lại bị [FPV](giam_bach_cau)
+    - [FPV](giam_bach_cau) có nguy hiểm không
+    - Mình muốn hỏi bệnh [FPV](giam_bach_cau)
+    - Động vật nào bị [FPV](giam_bach_cau)
+    - [FPV](giam_bach_cau) có thể chữa khỏi được không
+    - Làm sao để tránh [FPV](giam_bach_cau)
+    - Mèo bị [viêm ruột truyền nhiễm](giam_bach_cau)
+    - [viêm ruột truyền nhiễm](giam_bach_cau) là gì
+    - Tại sao lại bị [viêm ruột truyền nhiễm](giam_bach_cau)
+    - [viêm ruột truyền nhiễm](giam_bach_cau) có nguy hiểm không
+    - Mình muốn hỏi bệnh [viêm ruột truyền nhiễm](giam_bach_cau)
+    - Động vật nào bị [viêm ruột truyền nhiễm](giam_bach_cau)
+    - [viêm ruột truyền nhiễm](giam_bach_cau) có thể chữa khỏi được không
+    - Làm sao để tránh [viêm ruột truyền nhiễm](giam_bach_cau)
+    - động vật nào bị [giảm bạch cầu](giam_bach_cau)
+    - mèo bị [giảm bạch cầu](giam_bach_cau)
+    - meo bi [giam bach cau](giam_bach_cau)
+    - [FPV](giam_bach_cau) có thể chữa khỏi được không
+- intent: benh_bach_cau
+  examples: |
+    - Mèo bị [bệnh bạch cầu](bach_cau)
+    - [bệnh bạch cầu](bach_cau) là gì
+    - Tại sao lại bị [bệnh bạch cầu](bach_cau)
+    - [bệnh bạch cầu](bach_cau) có nguy hiểm không
+    - Mình muốn hỏi bệnh [bệnh bạch cầu](bach_cau)
+    - Động vật nào bị [bệnh bạch cầu](bach_cau)
+    - [Bệnh bạch cầu](bach_cau) có thể chữa khỏi được không
+    - Làm sao để tránh [bệnh bạch cầu](bach_cau)
+    - Mèo tiêm vắc xin [FeLV](bach_cau)
+    - Virus [FeLV](bach_cau)
+    - [FeLV](bach_cau) là gì
+    - Tại sao lại bị [FeLV](bach_cau)
+    - Virus [FeLV](bach_cau) có nguy hiểm không
+    - Mình muốn hỏi về virus [FeLV](bach_cau)
+    - Động vật nào bị virus [FeLV](bach_cau)
+    - [FeLV](bach_cau) có thể chữa khỏi được không
+    - Làm sao để tránh [FeLV](bach_cau)
+    - Bệnh [Leukemia](bach_cau) ở mèo
+    - [Leukemia](bach_cau) có nguy hiểm ko
+    - Cách chữa bệnh [Leukemia](bach_cau)
+    - Thông tin về bệnh [Leukemia](bach_cau)
+    - [Bệnh bạch cầu]{"entity": "bach_cau", "value": "b\u1ec7nh b\u1ea1ch c\u1ea7u"} có thể chữa khỏi được không
+    - tai sao lai bi [benh bach cau](bach_cau)
+    - mèo tiêm vắc xin [FeLV](bach_cau)
+    - mình muốn hỏi bệnh [bệnh bạch cầu](bach_cau)
+- intent: benh_viem_phuc_mac
+  examples: |
+    - Mèo bị [viêm phúc mạc](viem_phuc_mac)
+    - [viêm phúc mạc](viem_phuc_mac) là gì
+    - Tại sao lại bị [viêm phúc mạc](viem_phuc_mac)
+    - [viêm phúc mạc](viem_phuc_mac) có nguy hiểm không
+    - Mình muốn hỏi bệnh [viêm phúc mạc](viem_phuc_mac)
+    - Động vật nào bị [viêm phúc mạc](viem_phuc_mac)
+    - [Viêm phúc mạc](viem_phuc_mac) có thể chữa khỏi được không
+    - Làm sao để tránh [viêm phúc mạc](viem_phuc_mac)
+    - Mèo bị [FIP](viem_phuc_mac)
+    - [FIP](viem_phuc_mac) là gì
+    - Tại sao lại bị [FIP](viem_phuc_mac)
+    - [FIP](viem_phuc_mac) có nguy hiểm không
+    - Mình muốn hỏi bệnh [FIP](viem_phuc_mac)
+    - Động vật nào bị [FIP](viem_phuc_mac)
+    - [FIP](viem_phuc_mac) có thể chữa khỏi được không
+    - Làm sao để tránh [FIP](viem_phuc_mac)
+    - [viem phuc mac](viem_phuc_mac) co nguy hiem khong
+    - làm sao để tránh [FIP](viem_phuc_mac)
+    - mèo bị [viêm phúc mạc](viem_phuc_mac)
+- synonym: FIV
+  examples: |
+    - fiv
+- synonym: bệnh bạch cầu
+  examples: |
+    - Bệnh bạch cầu

@@ -1,0 +1,207 @@
+version: '3.1'
+
+stories:
+  # - story: interactive_story_1
+  #   steps:
+  #     - intent: xin_chao
+  #     - action: utter_xin_chao
+  #     - intent: giao_hang
+  #     - action: utter_giao_hang
+  #     - intent: cam_on
+  #     - action: utter_cam_on
+  #     - intent: tam_biet
+  #     - action: utter_tam_biet
+
+  # - story: interactive_story_2
+  #   steps:
+  #     - intent: xin_chao
+  #     - action: utter_xin_chao
+  #     - intent: benh_dai
+  #       entities:
+  #         - b_dai: dại
+  #     - slot_was_set:
+  #         - b_dai: dại
+  #     - action: utter_benh_dai
+  #     - intent: virus_FIV
+  #       entities:
+  #         - vi_fiv: FIV
+  #     - slot_was_set:
+  #         - vi_fiv: FIV
+  #     - action: utter_virus_FIV
+  #     - intent: benh_giam_bach_cau
+  #       entities:
+  #         - giam_bach_cau: giảm bạch cầu
+  #     - slot_was_set:
+  #         - giam_bach_cau: giảm bạch cầu
+  #     - action: utter_giam_bach_cau
+  #     - intent: benh_bach_cau
+  #       entities:
+  #         - bach_cau: bệnh bạch cầu
+  #     - slot_was_set:
+  #         - bach_cau: bệnh bạch cầu
+  #     - intent: benh_bach_cau
+  #       entities:
+  #         - bach_cau: bệnh bạch cầu
+  #     - action: utter_benh_bach_cau
+  #     - intent: benh_viem_phuc_mac
+  #       entities:
+  #         - viem_phuc_mac: FIP
+  #     - slot_was_set:
+  #         - viem_phuc_mac: FIP
+  #     - action: utter_viem_phuc_mac
+
+  # - story: interactive_story_3
+  #   steps:
+  #     - intent: xin_chao
+  #     - action: utter_xin_chao
+  #     - intent: giao_hang
+  #     - action: utter_giao_hang
+  #     - intent: gio_hoat_dong
+  #     - action: utter_gio_hoat_dong
+  #     - intent: benh_dai
+  #       entities:
+  #         - b_dai: dại
+  #     - slot_was_set:
+  #         - b_dai: dại
+  #     - action: utter_benh_dai
+  #     - intent: nlu_fallback
+  #       entities:
+  #         - b_dai: dại
+  #     - slot_was_set:
+  #         - b_dai: dại
+  #     - intent: benh_dai
+  #       entities:
+  #         - b_dai: dại
+  #     - action: utter_benh_dai
+  #     - intent: virus_FIV
+  #       entities:
+  #         - vi_fiv: sida
+  #     - slot_was_set:
+  #         - vi_fiv: sida
+  #     - action: utter_virus_FIV
+  #     - intent: benh_giam_bach_cau
+  #       entities:
+  #         - giam_bach_cau: giảm bạch cầu
+  #     - slot_was_set:
+  #         - giam_bach_cau: giảm bạch cầu
+  #     - action: utter_giam_bach_cau
+  #     - intent: benh_bach_cau
+  #       entities:
+  #         - bach_cau: FeLV
+  #     - slot_was_set:
+  #         - bach_cau: FeLV
+  #     - action: utter_benh_bach_cau
+  #     - intent: benh_bach_cau
+  #       entities:
+  #         - bach_cau: Leukemia
+  #     - slot_was_set:
+  #         - bach_cau: Leukemia
+  #     - action: utter_benh_bach_cau
+  #     - intent: benh_viem_phuc_mac
+  #       entities:
+  #         - viem_phuc_mac: FIP
+  #     - slot_was_set:
+  #         - viem_phuc_mac: FIP
+  #     - action: utter_viem_phuc_mac
+  #     - intent: benh_viem_phuc_mac
+  #       entities:
+  #         - viem_phuc_mac: viêm phúc mạc
+  #     - slot_was_set:
+  #         - viem_phuc_mac: viêm phúc mạc
+  #     - action: utter_viem_phuc_mac
+
+  # - story: interactive_story_4
+  #   steps:
+  #     - intent: xin_chao
+  #     - action: utter_xin_chao
+  #     - intent: giao_hang
+  #     - action: utter_giao_hang
+  #     - intent: gio_hoat_dong
+  #     - action: utter_gio_hoat_dong
+  #     - intent: virus_FIV
+  #       entities:
+  #         - vi_fiv: FIV
+  #     - slot_was_set:
+  #         - vi_fiv: FIV
+  #     - action: utter_virus_FIV
+  #     - intent: tam_biet
+  #     - intent: benh_bach_cau
+  #       entities:
+  #         - bach_cau: benh bach cau
+  #     - action: utter_benh_bach_cau
+  #     - intent: cam_on
+  #     - intent: benh_viem_phuc_mac
+  #       entities:
+  #         - viem_phuc_mac: viem phuc mac
+  #     - action: utter_viem_phuc_mac
+  #     - intent: tam_biet
+  #     - intent: benh_giam_bach_cau
+  #       entities:
+  #         - giam_bach_cau: giam bach cau
+  #     - action: utter_giam_bach_cau
+  #     - intent: tam_biet
+  #     - action: utter_tam_biet
+
+  - story: interactive_story_1
+    steps:
+      - intent: xin_chao
+      - action: utter_xin_chao
+      - intent: gio_hoat_dong
+      - action: utter_gio_hoat_dong
+      - intent: benh_bach_cau
+        entities:
+          - bach_cau: FeLV
+      - slot_was_set:
+          - bach_cau: FeLV
+      - action: utter_benh_bach_cau
+      - intent: benh_bach_cau
+        entities:
+          - bach_cau: bệnh
+          - bach_cau: bệnh bạch cầu
+      - slot_was_set:
+          - bach_cau: bệnh bạch cầu
+      - intent: benh_bach_cau
+        entities:
+          - bach_cau: bệnh bạch cầu
+      - action: utter_benh_bach_cau
+      - intent: benh_giam_bach_cau
+        entities:
+          - giam_bach_cau: FPV
+      - slot_was_set:
+          - giam_bach_cau: FPV
+      - action: utter_giam_bach_cau
+      - intent: virus_FIV
+        entities:
+          - vi_fiv: FIV
+      - slot_was_set:
+          - vi_fiv: FIV
+      - action: utter_virus_FIV
+      - intent: virus_FIV
+        entities:
+          - vi_fiv: sida
+      - slot_was_set:
+          - vi_fiv: sida
+      - action: utter_virus_FIV
+      - intent: benh_dai
+        entities:
+          - b_dai: dại
+      - slot_was_set:
+          - b_dai: dại
+      - action: utter_benh_dai
+      - intent: benh_viem_phuc_mac
+        entities:
+          - viem_phuc_mac: FIP
+      - slot_was_set:
+          - viem_phuc_mac: FIP
+      - action: utter_viem_phuc_mac
+      - intent: benh_viem_phuc_mac
+        entities:
+          - viem_phuc_mac: viêm phúc mạc
+      - slot_was_set:
+          - viem_phuc_mac: viêm phúc mạc
+      - action: utter_viem_phuc_mac
+      - intent: cam_on
+      - intent: cam_on
+      - action: utter_cam_on
+      - intent: tam_biet
+      - action: utter_tam_biet

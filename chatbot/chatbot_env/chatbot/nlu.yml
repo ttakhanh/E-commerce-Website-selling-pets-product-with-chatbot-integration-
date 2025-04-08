@@ -1,0 +1,14 @@
+version: "3.1"
+nlu:
+- intent: xin_chao
+  examples: |
+    - hi
+- intent: giao_hang
+  examples: |
+    - giao hàng như thế nào
+- intent: cam_on
+  examples: |
+    - tuyệt
+- intent: tam_biet
+  examples: |
+    - bye

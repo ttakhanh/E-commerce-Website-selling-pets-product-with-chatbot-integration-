@@ -1,0 +1,142 @@
+version: '3.1'
+config:
+  store_entities_as_slots: true
+intents:
+- benh_bach_cau:
+    use_entities: true
+- benh_dai:
+    use_entities: true
+- benh_giam_bach_cau:
+    use_entities: true
+- benh_viem_phuc_mac:
+    use_entities: true
+- cam_on
+- giao_hang
+- gio_hoat_dong
+- tam_biet
+- virus_FIV:
+    use_entities: true
+- xin_chao
+entities:
+- viem_phuc_mac
+- b_dai
+- bach_cau
+- vi_fiv
+- giam_bach_cau
+slots:
+  viem_phuc_mac:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: viem_phuc_mac
+  b_dai:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: b_dai
+  vi_fiv:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: vi_fiv
+  giam_bach_cau:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: giam_bach_cau
+  bach_cau:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: bach_cau
+responses:
+  utter_xin_chao:
+  - text: Kính chào quý khách! Quý khách muốn hỗ trợ gì ạ?
+  - text: Kính chào quý khách! Rất vui khi được phục vụ Quý khách ạ.
+  - text: Kính chào quý khách! Quý khách cần cửa hàng hỗ trợ ạ?
+  utter_tam_biet:
+  - text: Dạ cửa hàng xin chào tạm biệt Quý khách! Hi vọng lần sau được phục vụ Quý khách ạ.
+  - text: Rất hân hạnh khi được phục vụ Quý khách!
+  utter_cam_on:
+  - text: Dạ không có gì ạ.
+  - text: My pleasure!
+  - text: Not at all!
+  - text: Rất vui khi được phục vụ Quý khách!
+  utter_giao_hang:
+  - text: Cửa hàng em giao hàng trong vòng bán kính 3km, trên 3km thì tính thêm phí cho mỗi 1 km là 10.000 VND ạ.
+  utter_gio_hoat_dong:
+  - text: Thú y Pet Care K+ hoạt động từ 7AM đến 22PM các ngày trong tuần, khi có trường hợp khẩn cấp quý khách vui lòng gọi đến số 0909001001 ạ.
+  utter_benh_dai:
+  - text: |-
+      Bệnh {b_dai} ở chó mèo:
+      Phòng ngừa:
+        - Tiêm phòng vắc xin đầy đủ ngay khi bé được 2 tháng tuổi.
+        - Mũi tiêm ngừa bệnh dại cần được nhắc lại định kỳ mỗi năm.
+        - Giữ bé trong nhà, không được thả rông bé. Thường xuyên vệ sinh chỗ ở, nơi đi vệ sinh của bé để virus không có chỗ trú ẩn.
+      Thông tin:
+        - Virus bệnh dại tấn công vào cơ thể chủ yếu cư ngụ trong mô cơ. Sau khoảng chưa đầy 3 tháng, chúng sẽ bắt đầu “xâm chiếm” các dây thần kinh. Lúc này, vùng não và tủy sống của bé cũng bị tổn thương đáng kể.
+        - Cách ly mèo bệnh riêng ra để tránh lây lan cho những chú mèo khác.
+        - Tính từ lúc phát bệnh, mèo cưng chỉ sống được thêm khoảng 4 - 5 ngày.
+        - Khi mèo phát bệnh, virus dại tồn tại nhiều trong nước bọt và các loại dịch tiết khác như nước mắt, nước tiểu, sữa (mèo cái), ….
+  utter_virus_FIV:
+  - text: |-
+      Bệnh {vi_fiv}(Feline immunodeficiency virus) ở mèo:
+      Phòng ngừa:
+        - Cách tốt nhất để giảm nguy cơ mèo của bạn nhiễm virus FIV đó chính là bạn nên để chúng trong nhà, không nên để mèo tiếp xúc với mèo bệnh.
+        - Nếu bạn gửi mèo sang nhà người khác thì hãy đảm bảo rằng mèo trong ngôi nhà đó đã được xét nghiệm âm tính với FIV. Và nếu như đưa mèo mới về nhà thì bạn cũng cần tiến hành các xét nghiệm về FIV trước đó.
+      Điều trị:
+        - Mèo đực thường có nguy cơ nhiễm bệnh cao gấp 2 lần so với những chú mèo cái do vậy bạn nên thiến chúng để giảm nguy cơ chiến đấu và lây nhiễm vi trùng.
+        - Cách ly mèo bệnh riêng ra để tránh lây lan cho những chú mèo khác.
+        - Cung cấp chế độ chăm sóc đặc biệt, cung cấp nguồn dinh dưỡng tốt đồng thời tiêm kháng sinh để phòng ngừa các bệnh nhiễm trùng cơ hội.
+  utter_giam_bach_cau:
+  - text: |-
+      Bệnh {giam_bach_cau}(Feline panleukopenia Virus) ở mèo:
+      Phòng ngừa:
+        - Tiêm phòng giúp bé mèo của bạn chủ động sinh ra kháng thể trong hệ miễn dịch, để đào thải và tiêu diệt khi virus xâm nhập.
+        - Bạn nên sát trùng nơi mèo sinh sống định kỳ 1 tuần 1 lần với thuốc diệt virus Virkon, Cách ly những chú mèo bệnh, mèo hoang.
+      Điều trị:
+        - giảm nôn mửa, tiêu chảy và mất nước gây mất cân bằng điện giải và nhằm vào việc phòng những bệnh vi khuẩn thứ phát có thể xảy ra.
+        - Mục tiêu chính là giữ cho những mèo bị ảnh hưởng bệnh còn sống và sức khỏe tốt cho đến khi khả năng phòng vệ tự nhiên có thể đảm nhận được.
+        - Kháng thể thường xuất hiện khoảng sau 3-4 ngày sau khi thấy triệu chứng đầu tiên của bệnh, hai hoặc 3 ngày sau sự đáp ứng ngược lại ở bạch cầu có thể mong đợi xảy ra.
+  utter_benh_bach_cau:
+  - text: |-
+      Bệnh {bach_cau}(Feline Leukemia) ở mèo:
+      Phòng ngừa:
+        - Khi mèo đủ 14 tuần tuổi, bạn cần cho bé tiêm ngừa vắc xin FeLV. 
+        - Bạn không nên thả rông bé để hạn chế việc bé tiếp xúc với mèo hoang hoặc mèo chưa được tiêm chủng.
+      Điều trị:
+        - Điều trị các triệu chứng bệnh để cải thiện chất lượng cuộc sống của mèo.
+        - Dùng thuốc giảm đau, nếu cần thiết.
+        - Sử dụng thuốc chống vi-rút để giảm số lượng vi-rút FCoV, tuy nhiên hiệu quả của phương pháp này chưa được chứng minh.
+        - Truyền dịch và chăm sóc tốt, đặc biệt là đối với các trường hợp dạng ướt của bệnh.
+  utter_viem_phuc_mac:
+  - text: |-
+      Bệnh {viem_phuc_mac}(Feline Infectious Peritonitis) ở mèo:
+      Phòng ngừa:
+        - Giữ cho môi trường sống của mèo sạch sẽ và khô ráo, đặc biệt là đối với nơi ở chung của nhiều mèo.
+        - Giảm thiểu nơi tiếp xúc với phân và nước bọt của mèo bị nhiễm FCoV.
+        - Giữ cho mèo được ăn uống và tập thể dục đầy đủ, để giảm nguy cơ bị suy giảm miễn dịch.
+      Điều trị:
+        - Điều trị các triệu chứng bệnh để cải thiện chất lượng cuộc sống của mèo.
+        - Dùng thuốc giảm đau, nếu cần thiết.
+        - Sử dụng thuốc chống vi-rút để giảm số lượng vi-rút FCoV, tuy nhiên hiệu quả của phương pháp này chưa được chứng minh.
+        - Truyền dịch và chăm sóc tốt, đặc biệt là đối với các trường hợp dạng ướt của bệnh.
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+actions:
+- utter_giam_bach_cau
+- utter_viem_phuc_mac
+- utter_cam_on
+- utter_benh_bach_cau
+- utter_virus_FIV
+- utter_gio_hoat_dong
+- utter_tam_biet
+- utter_benh_dai
+- utter_xin_chao
+- utter_giao_hang

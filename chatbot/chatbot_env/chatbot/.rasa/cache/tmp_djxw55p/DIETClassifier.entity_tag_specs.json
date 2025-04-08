@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-b_dai",
+      "2": "I-b_dai",
+      "3": "L-b_dai",
+      "4": "U-b_dai",
+      "5": "B-bach_cau",
+      "6": "I-bach_cau",
+      "7": "L-bach_cau",
+      "8": "U-bach_cau",
+      "9": "B-giam_bach_cau",
+      "10": "I-giam_bach_cau",
+      "11": "L-giam_bach_cau",
+      "12": "U-giam_bach_cau",
+      "13": "B-vi_fiv",
+      "14": "I-vi_fiv",
+      "15": "L-vi_fiv",
+      "16": "U-vi_fiv",
+      "17": "B-viem_phuc_mac",
+      "18": "I-viem_phuc_mac",
+      "19": "L-viem_phuc_mac",
+      "20": "U-viem_phuc_mac",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-b_dai": 1,
+      "I-b_dai": 2,
+      "L-b_dai": 3,
+      "U-b_dai": 4,
+      "B-bach_cau": 5,
+      "I-bach_cau": 6,
+      "L-bach_cau": 7,
+      "U-bach_cau": 8,
+      "B-giam_bach_cau": 9,
+      "I-giam_bach_cau": 10,
+      "L-giam_bach_cau": 11,
+      "U-giam_bach_cau": 12,
+      "B-vi_fiv": 13,
+      "I-vi_fiv": 14,
+      "L-vi_fiv": 15,
+      "U-vi_fiv": 16,
+      "B-viem_phuc_mac": 17,
+      "I-viem_phuc_mac": 18,
+      "L-viem_phuc_mac": 19,
+      "U-viem_phuc_mac": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]
