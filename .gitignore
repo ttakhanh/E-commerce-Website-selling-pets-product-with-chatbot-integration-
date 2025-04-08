@@ -1,1 +1,5 @@
-chatbot/chatbot_env/
+# Ignore everything in chatbot_env
+chatbot_env/*
+
+# But keep the chatbot folder
+!chatbot_env/chatbot/
