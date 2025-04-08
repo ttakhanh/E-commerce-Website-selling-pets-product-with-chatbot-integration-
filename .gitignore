@@ -1,7 +1,37 @@
-# Ignore everything in chatbot_env
+# ===============================
+# 1. Ignore toàn bộ môi trường ảo
+# ===============================
 chatbot_env/*
-
-# But keep the chatbot folder
 !chatbot_env/chatbot/
+!chatbot_env/chatbot/**
 
-chatbot_env/chatbot/models/
+# ===============================
+# 2. Python junk
+# ===============================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.db
+*.sqlite3
+
+# ===============================
+# 3. VSCode / IDE
+# ===============================
+.vscode/
+.idea/
+*.swp
+
+# ===============================
+# 4. File hệ thống
+# ===============================
+.DS_Store
+Thumbs.db
+
+# ===============================
+# 5. Model nặng, cache nếu không muốn đẩy lên
+# (Bỏ comment nếu bạn không muốn lưu model trên GitHub)
+# ===============================
+# chatbot_env/chatbot/models/
+# chatbot_env/chatbot/.rasa/
